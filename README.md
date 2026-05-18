@@ -27,12 +27,28 @@ The planner is now organized into clean, focused modules:
 
 ## Usage
 
+**Easiest: Use the wrapper script from Desktop**
 ```bash
-# As a module
-python -m weekly_planner [command]
-
-# Or as a script (if in parent directory)
+cd ~/Desktop
 python weekly_planner.py [command]
+```
+
+**Or from the project directory with PYTHONPATH:**
+```bash
+cd ~/Desktop/weekly_planner
+PYTHONPATH=.. python -m weekly_planner [command]
+```
+
+**Or from Desktop with PYTHONPATH:**
+```bash
+cd ~/Desktop
+PYTHONPATH=. python -m weekly_planner [command]
+```
+
+**Create an alias for convenience:**
+```bash
+alias weekly-planner="cd ~/Desktop && python weekly_planner.py"
+weekly-planner [command]
 ```
 
 ### Commands

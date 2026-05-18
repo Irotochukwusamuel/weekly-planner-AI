@@ -1,23 +1,10 @@
 {
-  "j1_start": 420,
-  "j1_end": 720,
+  "j1_start": 480,
+  "j1_end": 780,
   "j1_before": 30,
   "j1_after": 30,
   "j1_days": [
-    false,
-    false,
-    false,
     true,
-    true,
-    true,
-    true
-  ],
-  "j2_start": 900,
-  "j2_end": 1200,
-  "j2_before": 75,
-  "j2_after": 75,
-  "j2_days": [
-    false,
     true,
     true,
     true,
@@ -25,6 +12,19 @@
     false,
     false
   ],
-  "study_pref": "auto",
+  "j2_start": 900,
+  "j2_end": 1200,
+  "j2_before": 30,
+  "j2_after": 30,
+  "j2_days": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false
+  ],
+  "study_pref": "evening",
   "gym_drive": 20
 }
