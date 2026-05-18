@@ -1,7 +1,11 @@
 """
 Terminal display functions for weekly plans.
 """
-from .utils import fmt_time, fmt_dur
+
+try:
+    from .utils import fmt_time, fmt_dur
+except ImportError:
+    from utils import fmt_time, fmt_dur
 
 DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 SHORT = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]

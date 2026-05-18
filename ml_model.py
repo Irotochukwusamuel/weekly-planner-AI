@@ -1,6 +1,7 @@
 """
 ML model training and inference for gym completion prediction.
 """
+
 import os
 import pickle
 import json
@@ -9,14 +10,21 @@ from datetime import datetime
 try:
     import numpy as np
     from sklearn.ensemble import GradientBoostingClassifier
+
     ML_AVAILABLE = True
 except ImportError:
     ML_AVAILABLE = False
 
-from .config import MODEL_PATH
-from .database import all_feedback
-from .scheduler import build_work_blocks
-from .utils import to_mins, get_gaps
+try:
+    from .config import MODEL_PATH
+    from .database import all_feedback
+    from .scheduler import build_work_blocks
+    from .utils import to_mins, get_gaps
+except ImportError:
+    from config import MODEL_PATH
+    from database import all_feedback
+    from scheduler import build_work_blocks
+    from utils import to_mins, get_gaps
 
 MIN_DAYS_TO_TRAIN = 7
 

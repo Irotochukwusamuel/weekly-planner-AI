@@ -1,13 +1,19 @@
 """
 Calendar integration — ICS export, macOS Calendar & Reminders.
 """
+
 import os
 import subprocess
 import platform
 import uuid
 from datetime import date, timedelta
-from .config import HERE
-from .utils import fmt_dur
+
+try:
+    from .config import HERE
+    from .utils import fmt_dur
+except ImportError:
+    from config import HERE
+    from utils import fmt_dur
 
 ICS_TYPES = {"work", "travel", "gym", "study", "personal"}
 DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]

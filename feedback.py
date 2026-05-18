@@ -1,9 +1,15 @@
 """
 Feedback collection and history display.
 """
-from .database import DAY_NAMES
-from .utils import fmt_dur, fmt_time, to_mins
-from .ml_model import FEATURE_NAMES
+
+try:
+    from .database import DAY_NAMES
+    from .utils import fmt_dur, fmt_time, to_mins
+    from .ml_model import FEATURE_NAMES
+except ImportError:
+    from database import DAY_NAMES
+    from utils import fmt_dur, fmt_time, to_mins
+    from ml_model import FEATURE_NAMES
 
 DAYS = DAY_NAMES
 SHORT = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
@@ -11,8 +17,11 @@ SHORT = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 def collect_feedback(con) -> bool:
     """Collect feedback for past days."""
-    from .database import pending_feedback
-    
+    try:
+        from .database import pending_feedback
+    except ImportError:
+        from database import pending_feedback
+
     days = pending_feedback(con)
     if not days:
         print("\n  ✓ All past days are logged — no feedback needed.\n")
@@ -46,8 +55,11 @@ def collect_feedback(con) -> bool:
 
 def show_history(con):
     """Display week history."""
-    from .database import get_week_history, get_week_feedback
-    
+    try:
+        from .database import get_week_history, get_week_feedback
+    except ImportError:
+        from database import get_week_history, get_week_feedback
+
     weeks = get_week_history(con, 12)
     if not weeks:
         print("\n  No history yet — run `plan` first.\n")
@@ -74,10 +86,15 @@ def show_history(con):
 
 def show_insights(con):
     """Display ML model insights."""
-    from .database import all_feedback
-    from .ml_model import load_model, ML_AVAILABLE, MIN_DAYS_TO_TRAIN
-    from .utils import fmt_time, to_mins
-    
+    try:
+        from .database import all_feedback
+        from .ml_model import load_model, ML_AVAILABLE, MIN_DAYS_TO_TRAIN
+        from .utils import fmt_time, to_mins
+    except ImportError:
+        from database import all_feedback
+        from ml_model import load_model, ML_AVAILABLE, MIN_DAYS_TO_TRAIN
+        from utils import fmt_time, to_mins
+
     rows = all_feedback(con)
     bundle = load_model()
 

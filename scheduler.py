@@ -1,8 +1,13 @@
 """
 Core scheduling logic — planning days around work and preferences.
 """
-from .utils import fmt_time, fmt_dur, get_gaps, get_free_slots, pref_score
-from .config import GYM_DRIVE, GYM_WORKOUT
+
+try:
+    from .utils import fmt_time, fmt_dur, get_gaps, get_free_slots, pref_score
+    from .config import GYM_DRIVE, GYM_WORKOUT
+except ImportError:
+    from utils import fmt_time, fmt_dur, get_gaps, get_free_slots, pref_score
+    from config import GYM_DRIVE, GYM_WORKOUT
 
 
 def build_work_blocks(day_idx: int, cfg: dict) -> list:

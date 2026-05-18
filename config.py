@@ -1,6 +1,7 @@
 """
 Configuration management — loads from JSON, provides defaults.
 """
+
 import os
 import json
 
@@ -38,7 +39,10 @@ def make_config() -> dict:
         except Exception:
             pass
     # Hardcoded defaults
-    from .utils import to_mins
+    try:
+        from .utils import to_mins
+    except ImportError:
+        from utils import to_mins
     return {
         "j1_start": to_mins(JOB1_START),
         "j1_end": to_mins(JOB1_END),

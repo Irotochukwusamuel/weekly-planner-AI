@@ -1,9 +1,15 @@
 """
 Setup wizard for initial configuration.
 """
+
 import json
-from .config import CONFIG_PATH, save_config
-from .utils import to_mins, fmt_time
+
+try:
+    from .config import CONFIG_PATH, save_config
+    from .utils import to_mins, fmt_time
+except ImportError:
+    from config import CONFIG_PATH, save_config
+    from utils import to_mins, fmt_time
 
 DAY_NAMES_FULL = [
     "Monday",

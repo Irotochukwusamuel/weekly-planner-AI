@@ -1,11 +1,17 @@
 """
 HTML schedule generation and export.
 """
+
 import os
 import webbrowser
 from datetime import date, timedelta
-from .utils import fmt_time, fmt_dur
-from .config import HERE
+
+try:
+    from .utils import fmt_time, fmt_dur
+    from .config import HERE
+except ImportError:
+    from utils import fmt_time, fmt_dur
+    from config import HERE
 
 DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 SHORT = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]

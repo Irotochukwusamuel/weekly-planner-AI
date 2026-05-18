@@ -1,9 +1,14 @@
 """
 Database operations — weeks, day plans, feedback, and history.
 """
+
 import sqlite3
 import json
-from .config import DB_PATH
+
+try:
+    from .config import DB_PATH
+except ImportError:
+    from config import DB_PATH
 
 DAY_NAMES = [
     "Monday",
@@ -116,3 +121,78 @@ def get_latest_week(con) -> str | None:
         "SELECT week_start FROM weeks ORDER BY id DESC LIMIT 1"
     ).fetchone()
     return row["week_start"] if row else None
+
+
+def get_latest_week_bundle(con):
+    """Get the most recently saved week config and plans."""
+    week = con.execute(
+        "SELECT id, week_start, config FROM weeks ORDER BY id DESC LIMIT 1"
+    ).fetchone()
+    if not week:
+        return None
+
+    plans = con.execute(
+        """
+        SELECT day_index, day_name, plan_json, gym_start, study_start
+        FROM day_plans
+        WHERE week_id=?
+        ORDER BY day_index
+    """,
+        (week["id"],),
+    ).fetchall()
+    return week, plans
+
+
+def get_week_bundle(con, week_id: int):
+    """Get a saved week config and plans by week id."""
+    week = con.execute(
+        "SELECT id, week_start, config FROM weeks WHERE id=?",
+        (week_id,),
+    ).fetchone()
+    if not week:
+        return None
+
+    plans = con.execute(
+        """
+        SELECT day_index, day_name, plan_json, gym_start, study_start
+        FROM day_plans
+        WHERE week_id=?
+        ORDER BY day_index
+    """,
+        (week_id,),
+    ).fetchall()
+    return week, plans
+
+
+def update_week(con, week_id: int, week_start: str, config: dict, plans: list) -> None:
+    """Replace a saved week in place."""
+    cur = con.cursor()
+    cur.execute(
+        "UPDATE weeks SET week_start=?, config=? WHERE id=?",
+        (week_start, json.dumps(config), week_id),
+    )
+    cur.execute("DELETE FROM day_plans WHERE week_id=?", (week_id,))
+    for i, p in enumerate(plans):
+        gym_start = next((s["s"] for s in p["timeline"] if s["type"] == "gym"), None)
+        study_start = next(
+            (s["s"] for s in p["timeline"] if s["type"] == "study"), None
+        )
+        cur.execute(
+            """
+            INSERT INTO day_plans (week_id, day_index, day_name, plan_json, gym_start, study_start)
+            VALUES (?,?,?,?,?,?)
+        """,
+            (week_id, i, DAY_NAMES[i], json.dumps(p), gym_start, study_start),
+        )
+    con.commit()
+
+
+def delete_week(con, week_id: int) -> str | None:
+    """Delete a saved week and return its week_start if found."""
+    row = con.execute("SELECT week_start FROM weeks WHERE id=?", (week_id,)).fetchone()
+    if not row:
+        return None
+    con.execute("DELETE FROM day_plans WHERE week_id=?", (week_id,))
+    con.execute("DELETE FROM weeks WHERE id=?", (week_id,))
+    con.commit()
+    return row["week_start"]

@@ -33,10 +33,17 @@ cd ~/Desktop
 python weekly_planner.py [command]
 ```
 
-**Or from the project directory with PYTHONPATH:**
+**From the project directory (now works directly):**
 ```bash
 cd ~/Desktop/weekly_planner
-PYTHONPATH=.. python -m weekly_planner [command]
+python -m weekly_planner [command]
+```
+
+Do not use `python -m weekly-planner.py ...`; module names cannot contain hyphens or `.py`.
+If you want a script-style command, run:
+```bash
+cd ~/Desktop
+python weekly_planner.py [command]
 ```
 
 **Or from Desktop with PYTHONPATH:**
@@ -55,6 +62,9 @@ weekly-planner [command]
 
 - `setup` — First-time configuration wizard
 - `plan` — Generate this week's schedule
+- `view` — Open the latest saved schedule, or preview the current plan, in HTML
+- `edit` — Regenerate a saved schedule after changing your config
+- `delete` — Remove a saved schedule and its generated files
 - `export` — Save schedule as HTML
 - `calendar` — Add to Google Calendar, Apple Calendar, or macOS Reminders
 - `feedback` — Log how your days went

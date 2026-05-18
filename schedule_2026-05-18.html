@@ -262,108 +262,100 @@
       <p class="week-range">May 18 – 24, 2026</p>
     </div>
     <div class="stats">
-      <div class="stat"><div class="stat-val">💼</div><div class="stat-lbl">40 hr<br>work</div></div>
-      <div class="stat"><div class="stat-val">🚗</div><div class="stat-lbl">14 hr<br>commute</div></div>
+      <div class="stat"><div class="stat-val">💼</div><div class="stat-lbl">50 hr<br>work</div></div>
+      <div class="stat"><div class="stat-val">🚗</div><div class="stat-lbl">10 hr<br>commute</div></div>
       <div class="stat"><div class="stat-val">7/7</div><div class="stat-lbl">gym<br>days</div></div>
-      <div class="stat"><div class="stat-val">5/7</div><div class="stat-lbl">study<br>days</div></div>
+      <div class="stat"><div class="stat-val">7/7</div><div class="stat-lbl">study<br>days</div></div>
     </div>
   </header>
 
   <div class="overview">
         <div class="ov-cell">
           <div class="ov-day">Mon</div>
-          <div class="ov-badges"><span class="ov-badge ov-off">off</span></div>
+          <div class="ov-badges"><span class="ov-badge ov-work">10 hr</span><span class="ov-badge ov-gym">gym</span><span class="ov-badge ov-study">study</span></div>
         </div>
         <div class="ov-cell">
           <div class="ov-day">Tue</div>
-          <div class="ov-badges"><span class="ov-badge ov-work">5 hr</span><span class="ov-badge ov-gym">gym</span><span class="ov-badge ov-study">study</span></div>
+          <div class="ov-badges"><span class="ov-badge ov-work">10 hr</span><span class="ov-badge ov-gym">gym</span><span class="ov-badge ov-study">study</span></div>
         </div>
         <div class="ov-cell">
           <div class="ov-day">Wed</div>
-          <div class="ov-badges"><span class="ov-badge ov-work">5 hr</span><span class="ov-badge ov-gym">gym</span><span class="ov-badge ov-study">study</span></div>
+          <div class="ov-badges"><span class="ov-badge ov-work">10 hr</span><span class="ov-badge ov-gym">gym</span><span class="ov-badge ov-study">study</span></div>
         </div>
         <div class="ov-cell">
           <div class="ov-day">Thu</div>
-          <div class="ov-badges"><span class="ov-badge ov-work">10 hr</span><span class="ov-badge ov-gym">gym</span></div>
+          <div class="ov-badges"><span class="ov-badge ov-work">10 hr</span><span class="ov-badge ov-gym">gym</span><span class="ov-badge ov-study">study</span></div>
         </div>
         <div class="ov-cell">
           <div class="ov-day">Fri</div>
-          <div class="ov-badges"><span class="ov-badge ov-work">10 hr</span><span class="ov-badge ov-gym">gym</span></div>
+          <div class="ov-badges"><span class="ov-badge ov-work">10 hr</span><span class="ov-badge ov-gym">gym</span><span class="ov-badge ov-study">study</span></div>
         </div>
         <div class="ov-cell">
           <div class="ov-day">Sat</div>
-          <div class="ov-badges"><span class="ov-badge ov-work">5 hr</span><span class="ov-badge ov-gym">gym</span><span class="ov-badge ov-study">study</span></div>
+          <div class="ov-badges"><span class="ov-badge ov-off">off</span></div>
         </div>
         <div class="ov-cell">
           <div class="ov-day">Sun</div>
-          <div class="ov-badges"><span class="ov-badge ov-work">5 hr</span><span class="ov-badge ov-gym">gym</span><span class="ov-badge ov-study">study</span></div>
+          <div class="ov-badges"><span class="ov-badge ov-off">off</span></div>
         </div>
   </div>
 
   <div class="days-grid">
-      <div class="day-card day-off">
+      <div class="day-card">
         <div class="day-header">
           <span class="day-short">Mon</span>
           <span class="day-full">Monday</span>
-          <span class="day-tag tag-off">Rest</span>
+          <span class="work-hrs">10 hr work</span>
         </div>
-        <div class="day-off-msg">No shifts today — good for recovery&nbsp;&amp;&nbsp;study.</div>
-      </div>
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-short">Tue</span>
-          <span class="day-full">Tuesday</span>
-          <span class="work-hrs">5 hr work</span>
-        </div>
-        <div class="day-tags"><span class="day-tag tag-gym">🏋️ Free morning (10:00 AM)</span><span class="day-tag tag-study">📖 Study</span></div>
+        <div class="day-tags"><span class="day-tag tag-gym">🏋️ Best gap (auto)</span><span class="day-tag tag-study">📖 Study</span></div>
         <div class="slots">
+        <div class="slot slot-study" style="background:#F0EFFE;border-left:3px solid #7F77DD">
+          <div class="slot-time" style="color:#2D2880">6:00 AM – 7:30 AM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#2D2880">📖 Study session</div>
+            <div class="slot-detail">90 min focused study</div>
+          </div>
+        </div>
+        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
+          <div class="slot-time" style="color:#3D3C39">7:30 AM – 8:00 AM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#3D3C39">🚗 Travel to Job 1</div>
+            <div class="slot-detail">30 min commute</div>
+          </div>
+        </div>
+        <div class="slot slot-work" style="background:#EBF4FF;border-left:3px solid #378ADD">
+          <div class="slot-time" style="color:#0C3D7A">8:00 AM – 1:00 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#0C3D7A">💼 Job 1</div>
+            <div class="slot-detail">5 hr shift</div>
+          </div>
+        </div>
+        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
+          <div class="slot-time" style="color:#3D3C39">1:00 PM – 1:30 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#3D3C39">🚗 Travel from Job 1</div>
+            <div class="slot-detail">30 min commute</div>
+          </div>
+        </div>
         <div class="slot slot-personal" style="background:#FEF5E6;border-left:3px solid #C47B10">
-          <div class="slot-time" style="color:#5A3600">6:00 AM – 6:45 AM</div>
+          <div class="slot-time" style="color:#5A3600">1:30 PM – 2:15 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#5A3600">🌤 Personal time</div>
             <div class="slot-detail">Rest, hobbies, recharge</div>
           </div>
         </div>
         <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">6:45 AM – 9:40 AM</div>
+          <div class="slot-time" style="color:#9A9890">2:15 PM – 2:30 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">2 hr 55 min</div>
+            <div class="slot-detail">15 min</div>
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">9:40 AM – 10:00 AM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#3D3C39">🚗 Drive to gym</div>
-            <div class="slot-detail">20 min</div>
-          </div>
-        </div>
-        <div class="slot slot-gym" style="background:#EDF7E2;border-left:3px solid #5A9118">
-          <div class="slot-time" style="color:#244010">10:00 AM – 11:00 AM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#244010">🏋️ Gym</div>
-            <div class="slot-detail">1 hr workout</div>
-          </div>
-        </div>
-        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">11:00 AM – 11:20 AM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#3D3C39">🚗 Drive home from gym</div>
-            <div class="slot-detail">20 min</div>
-          </div>
-        </div>
-        <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">11:20 AM – 1:45 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">2 hr 25 min</div>
-          </div>
-        </div>
-        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">1:45 PM – 3:00 PM</div>
+          <div class="slot-time" style="color:#3D3C39">2:30 PM – 3:00 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Travel to Job 2</div>
-            <div class="slot-detail">1 hr 15 min commute</div>
+            <div class="slot-detail">30 min commute</div>
           </div>
         </div>
         <div class="slot slot-work" style="background:#EBF4FF;border-left:3px solid #378ADD">
@@ -374,24 +366,138 @@
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">8:00 PM – 9:15 PM</div>
+          <div class="slot-time" style="color:#3D3C39">8:00 PM – 8:30 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Travel from Job 2</div>
-            <div class="slot-detail">1 hr 15 min commute</div>
+            <div class="slot-detail">30 min commute</div>
           </div>
         </div>
+        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
+          <div class="slot-time" style="color:#3D3C39">8:30 PM – 8:50 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#3D3C39">🚗 Drive to gym</div>
+            <div class="slot-detail">20 min</div>
+          </div>
+        </div>
+        <div class="slot slot-gym" style="background:#EDF7E2;border-left:3px solid #5A9118">
+          <div class="slot-time" style="color:#244010">8:50 PM – 9:50 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#244010">🏋️ Gym</div>
+            <div class="slot-detail">1 hr workout</div>
+          </div>
+        </div>
+        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
+          <div class="slot-time" style="color:#3D3C39">9:50 PM – 10:10 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#3D3C39">🚗 Drive home from gym</div>
+            <div class="slot-detail">20 min</div>
+          </div>
+        </div>
+        <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
+          <div class="slot-time" style="color:#9A9890">10:10 PM – 11:00 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#9A9890"> Free time</div>
+            <div class="slot-detail">50 min</div>
+          </div>
+        </div></div>
+      </div>
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-short">Tue</span>
+          <span class="day-full">Tuesday</span>
+          <span class="work-hrs">10 hr work</span>
+        </div>
+        <div class="day-tags"><span class="day-tag tag-gym">🏋️ Best gap (auto)</span><span class="day-tag tag-study">📖 Study</span></div>
+        <div class="slots">
         <div class="slot slot-study" style="background:#F0EFFE;border-left:3px solid #7F77DD">
-          <div class="slot-time" style="color:#2D2880">9:15 PM – 10:45 PM</div>
+          <div class="slot-time" style="color:#2D2880">6:00 AM – 7:30 AM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#2D2880">📖 Study session</div>
             <div class="slot-detail">90 min focused study</div>
           </div>
         </div>
+        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
+          <div class="slot-time" style="color:#3D3C39">7:30 AM – 8:00 AM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#3D3C39">🚗 Travel to Job 1</div>
+            <div class="slot-detail">30 min commute</div>
+          </div>
+        </div>
+        <div class="slot slot-work" style="background:#EBF4FF;border-left:3px solid #378ADD">
+          <div class="slot-time" style="color:#0C3D7A">8:00 AM – 1:00 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#0C3D7A">💼 Job 1</div>
+            <div class="slot-detail">5 hr shift</div>
+          </div>
+        </div>
+        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
+          <div class="slot-time" style="color:#3D3C39">1:00 PM – 1:30 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#3D3C39">🚗 Travel from Job 1</div>
+            <div class="slot-detail">30 min commute</div>
+          </div>
+        </div>
+        <div class="slot slot-personal" style="background:#FEF5E6;border-left:3px solid #C47B10">
+          <div class="slot-time" style="color:#5A3600">1:30 PM – 2:15 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#5A3600">🌤 Personal time</div>
+            <div class="slot-detail">Rest, hobbies, recharge</div>
+          </div>
+        </div>
         <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">10:45 PM – 11:00 PM</div>
+          <div class="slot-time" style="color:#9A9890">2:15 PM – 2:30 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#9A9890"> Free time</div>
             <div class="slot-detail">15 min</div>
+          </div>
+        </div>
+        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
+          <div class="slot-time" style="color:#3D3C39">2:30 PM – 3:00 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#3D3C39">🚗 Travel to Job 2</div>
+            <div class="slot-detail">30 min commute</div>
+          </div>
+        </div>
+        <div class="slot slot-work" style="background:#EBF4FF;border-left:3px solid #378ADD">
+          <div class="slot-time" style="color:#0C3D7A">3:00 PM – 8:00 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#0C3D7A">💼 Job 2</div>
+            <div class="slot-detail">5 hr shift</div>
+          </div>
+        </div>
+        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
+          <div class="slot-time" style="color:#3D3C39">8:00 PM – 8:30 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#3D3C39">🚗 Travel from Job 2</div>
+            <div class="slot-detail">30 min commute</div>
+          </div>
+        </div>
+        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
+          <div class="slot-time" style="color:#3D3C39">8:30 PM – 8:50 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#3D3C39">🚗 Drive to gym</div>
+            <div class="slot-detail">20 min</div>
+          </div>
+        </div>
+        <div class="slot slot-gym" style="background:#EDF7E2;border-left:3px solid #5A9118">
+          <div class="slot-time" style="color:#244010">8:50 PM – 9:50 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#244010">🏋️ Gym</div>
+            <div class="slot-detail">1 hr workout</div>
+          </div>
+        </div>
+        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
+          <div class="slot-time" style="color:#3D3C39">9:50 PM – 10:10 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#3D3C39">🚗 Drive home from gym</div>
+            <div class="slot-detail">20 min</div>
+          </div>
+        </div>
+        <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
+          <div class="slot-time" style="color:#9A9890">10:10 PM – 11:00 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#9A9890"> Free time</div>
+            <div class="slot-detail">50 min</div>
           </div>
         </div></div>
       </div>
@@ -399,57 +505,57 @@
         <div class="day-header">
           <span class="day-short">Wed</span>
           <span class="day-full">Wednesday</span>
-          <span class="work-hrs">5 hr work</span>
+          <span class="work-hrs">10 hr work</span>
         </div>
-        <div class="day-tags"><span class="day-tag tag-gym">🏋️ Free morning (10:00 AM)</span><span class="day-tag tag-study">📖 Study</span></div>
+        <div class="day-tags"><span class="day-tag tag-gym">🏋️ Best gap (auto)</span><span class="day-tag tag-study">📖 Study</span></div>
         <div class="slots">
+        <div class="slot slot-study" style="background:#F0EFFE;border-left:3px solid #7F77DD">
+          <div class="slot-time" style="color:#2D2880">6:00 AM – 7:30 AM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#2D2880">📖 Study session</div>
+            <div class="slot-detail">90 min focused study</div>
+          </div>
+        </div>
+        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
+          <div class="slot-time" style="color:#3D3C39">7:30 AM – 8:00 AM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#3D3C39">🚗 Travel to Job 1</div>
+            <div class="slot-detail">30 min commute</div>
+          </div>
+        </div>
+        <div class="slot slot-work" style="background:#EBF4FF;border-left:3px solid #378ADD">
+          <div class="slot-time" style="color:#0C3D7A">8:00 AM – 1:00 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#0C3D7A">💼 Job 1</div>
+            <div class="slot-detail">5 hr shift</div>
+          </div>
+        </div>
+        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
+          <div class="slot-time" style="color:#3D3C39">1:00 PM – 1:30 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#3D3C39">🚗 Travel from Job 1</div>
+            <div class="slot-detail">30 min commute</div>
+          </div>
+        </div>
         <div class="slot slot-personal" style="background:#FEF5E6;border-left:3px solid #C47B10">
-          <div class="slot-time" style="color:#5A3600">6:00 AM – 6:45 AM</div>
+          <div class="slot-time" style="color:#5A3600">1:30 PM – 2:15 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#5A3600">🌤 Personal time</div>
             <div class="slot-detail">Rest, hobbies, recharge</div>
           </div>
         </div>
         <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">6:45 AM – 9:40 AM</div>
+          <div class="slot-time" style="color:#9A9890">2:15 PM – 2:30 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">2 hr 55 min</div>
+            <div class="slot-detail">15 min</div>
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">9:40 AM – 10:00 AM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#3D3C39">🚗 Drive to gym</div>
-            <div class="slot-detail">20 min</div>
-          </div>
-        </div>
-        <div class="slot slot-gym" style="background:#EDF7E2;border-left:3px solid #5A9118">
-          <div class="slot-time" style="color:#244010">10:00 AM – 11:00 AM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#244010">🏋️ Gym</div>
-            <div class="slot-detail">1 hr workout</div>
-          </div>
-        </div>
-        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">11:00 AM – 11:20 AM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#3D3C39">🚗 Drive home from gym</div>
-            <div class="slot-detail">20 min</div>
-          </div>
-        </div>
-        <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">11:20 AM – 1:45 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">2 hr 25 min</div>
-          </div>
-        </div>
-        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">1:45 PM – 3:00 PM</div>
+          <div class="slot-time" style="color:#3D3C39">2:30 PM – 3:00 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Travel to Job 2</div>
-            <div class="slot-detail">1 hr 15 min commute</div>
+            <div class="slot-detail">30 min commute</div>
           </div>
         </div>
         <div class="slot slot-work" style="background:#EBF4FF;border-left:3px solid #378ADD">
@@ -460,24 +566,38 @@
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">8:00 PM – 9:15 PM</div>
+          <div class="slot-time" style="color:#3D3C39">8:00 PM – 8:30 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Travel from Job 2</div>
-            <div class="slot-detail">1 hr 15 min commute</div>
+            <div class="slot-detail">30 min commute</div>
           </div>
         </div>
-        <div class="slot slot-study" style="background:#F0EFFE;border-left:3px solid #7F77DD">
-          <div class="slot-time" style="color:#2D2880">9:15 PM – 10:45 PM</div>
+        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
+          <div class="slot-time" style="color:#3D3C39">8:30 PM – 8:50 PM</div>
           <div class="slot-body">
-            <div class="slot-label" style="color:#2D2880">📖 Study session</div>
-            <div class="slot-detail">90 min focused study</div>
+            <div class="slot-label" style="color:#3D3C39">🚗 Drive to gym</div>
+            <div class="slot-detail">20 min</div>
+          </div>
+        </div>
+        <div class="slot slot-gym" style="background:#EDF7E2;border-left:3px solid #5A9118">
+          <div class="slot-time" style="color:#244010">8:50 PM – 9:50 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#244010">🏋️ Gym</div>
+            <div class="slot-detail">1 hr workout</div>
+          </div>
+        </div>
+        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
+          <div class="slot-time" style="color:#3D3C39">9:50 PM – 10:10 PM</div>
+          <div class="slot-body">
+            <div class="slot-label" style="color:#3D3C39">🚗 Drive home from gym</div>
+            <div class="slot-detail">20 min</div>
           </div>
         </div>
         <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">10:45 PM – 11:00 PM</div>
+          <div class="slot-time" style="color:#9A9890">10:10 PM – 11:00 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">15 min</div>
+            <div class="slot-detail">50 min</div>
           </div>
         </div></div>
       </div>
@@ -487,55 +607,55 @@
           <span class="day-full">Thursday</span>
           <span class="work-hrs">10 hr work</span>
         </div>
-        <div class="day-tags"><span class="day-tag tag-gym">🏋️ Best gap (auto)</span></div>
+        <div class="day-tags"><span class="day-tag tag-gym">🏋️ Best gap (auto)</span><span class="day-tag tag-study">📖 Study</span></div>
         <div class="slots">
-        <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">6:00 AM – 6:30 AM</div>
+        <div class="slot slot-study" style="background:#F0EFFE;border-left:3px solid #7F77DD">
+          <div class="slot-time" style="color:#2D2880">6:00 AM – 7:30 AM</div>
           <div class="slot-body">
-            <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">30 min</div>
+            <div class="slot-label" style="color:#2D2880">📖 Study session</div>
+            <div class="slot-detail">90 min focused study</div>
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">6:30 AM – 7:00 AM</div>
+          <div class="slot-time" style="color:#3D3C39">7:30 AM – 8:00 AM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Travel to Job 1</div>
             <div class="slot-detail">30 min commute</div>
           </div>
         </div>
         <div class="slot slot-work" style="background:#EBF4FF;border-left:3px solid #378ADD">
-          <div class="slot-time" style="color:#0C3D7A">7:00 AM – 12:00 PM</div>
+          <div class="slot-time" style="color:#0C3D7A">8:00 AM – 1:00 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#0C3D7A">💼 Job 1</div>
             <div class="slot-detail">5 hr shift</div>
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">12:00 PM – 12:30 PM</div>
+          <div class="slot-time" style="color:#3D3C39">1:00 PM – 1:30 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Travel from Job 1</div>
             <div class="slot-detail">30 min commute</div>
           </div>
         </div>
         <div class="slot slot-personal" style="background:#FEF5E6;border-left:3px solid #C47B10">
-          <div class="slot-time" style="color:#5A3600">12:30 PM – 1:15 PM</div>
+          <div class="slot-time" style="color:#5A3600">1:30 PM – 2:15 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#5A3600">🌤 Personal time</div>
             <div class="slot-detail">Rest, hobbies, recharge</div>
           </div>
         </div>
         <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">1:15 PM – 1:45 PM</div>
+          <div class="slot-time" style="color:#9A9890">2:15 PM – 2:30 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">30 min</div>
+            <div class="slot-detail">15 min</div>
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">1:45 PM – 3:00 PM</div>
+          <div class="slot-time" style="color:#3D3C39">2:30 PM – 3:00 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Travel to Job 2</div>
-            <div class="slot-detail">1 hr 15 min commute</div>
+            <div class="slot-detail">30 min commute</div>
           </div>
         </div>
         <div class="slot slot-work" style="background:#EBF4FF;border-left:3px solid #378ADD">
@@ -546,38 +666,38 @@
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">8:00 PM – 9:15 PM</div>
+          <div class="slot-time" style="color:#3D3C39">8:00 PM – 8:30 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Travel from Job 2</div>
-            <div class="slot-detail">1 hr 15 min commute</div>
+            <div class="slot-detail">30 min commute</div>
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">9:15 PM – 9:35 PM</div>
+          <div class="slot-time" style="color:#3D3C39">8:30 PM – 8:50 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Drive to gym</div>
             <div class="slot-detail">20 min</div>
           </div>
         </div>
         <div class="slot slot-gym" style="background:#EDF7E2;border-left:3px solid #5A9118">
-          <div class="slot-time" style="color:#244010">9:35 PM – 10:35 PM</div>
+          <div class="slot-time" style="color:#244010">8:50 PM – 9:50 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#244010">🏋️ Gym</div>
             <div class="slot-detail">1 hr workout</div>
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">10:35 PM – 10:55 PM</div>
+          <div class="slot-time" style="color:#3D3C39">9:50 PM – 10:10 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Drive home from gym</div>
             <div class="slot-detail">20 min</div>
           </div>
         </div>
         <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">10:55 PM – 11:00 PM</div>
+          <div class="slot-time" style="color:#9A9890">10:10 PM – 11:00 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">5 min</div>
+            <div class="slot-detail">50 min</div>
           </div>
         </div></div>
       </div>
@@ -587,55 +707,55 @@
           <span class="day-full">Friday</span>
           <span class="work-hrs">10 hr work</span>
         </div>
-        <div class="day-tags"><span class="day-tag tag-gym">🏋️ Best gap (auto)</span></div>
+        <div class="day-tags"><span class="day-tag tag-gym">🏋️ Best gap (auto)</span><span class="day-tag tag-study">📖 Study</span></div>
         <div class="slots">
-        <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">6:00 AM – 6:30 AM</div>
+        <div class="slot slot-study" style="background:#F0EFFE;border-left:3px solid #7F77DD">
+          <div class="slot-time" style="color:#2D2880">6:00 AM – 7:30 AM</div>
           <div class="slot-body">
-            <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">30 min</div>
+            <div class="slot-label" style="color:#2D2880">📖 Study session</div>
+            <div class="slot-detail">90 min focused study</div>
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">6:30 AM – 7:00 AM</div>
+          <div class="slot-time" style="color:#3D3C39">7:30 AM – 8:00 AM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Travel to Job 1</div>
             <div class="slot-detail">30 min commute</div>
           </div>
         </div>
         <div class="slot slot-work" style="background:#EBF4FF;border-left:3px solid #378ADD">
-          <div class="slot-time" style="color:#0C3D7A">7:00 AM – 12:00 PM</div>
+          <div class="slot-time" style="color:#0C3D7A">8:00 AM – 1:00 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#0C3D7A">💼 Job 1</div>
             <div class="slot-detail">5 hr shift</div>
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">12:00 PM – 12:30 PM</div>
+          <div class="slot-time" style="color:#3D3C39">1:00 PM – 1:30 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Travel from Job 1</div>
             <div class="slot-detail">30 min commute</div>
           </div>
         </div>
         <div class="slot slot-personal" style="background:#FEF5E6;border-left:3px solid #C47B10">
-          <div class="slot-time" style="color:#5A3600">12:30 PM – 1:15 PM</div>
+          <div class="slot-time" style="color:#5A3600">1:30 PM – 2:15 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#5A3600">🌤 Personal time</div>
             <div class="slot-detail">Rest, hobbies, recharge</div>
           </div>
         </div>
         <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">1:15 PM – 1:45 PM</div>
+          <div class="slot-time" style="color:#9A9890">2:15 PM – 2:30 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">30 min</div>
+            <div class="slot-detail">15 min</div>
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">1:45 PM – 3:00 PM</div>
+          <div class="slot-time" style="color:#3D3C39">2:30 PM – 3:00 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Travel to Job 2</div>
-            <div class="slot-detail">1 hr 15 min commute</div>
+            <div class="slot-detail">30 min commute</div>
           </div>
         </div>
         <div class="slot slot-work" style="background:#EBF4FF;border-left:3px solid #378ADD">
@@ -646,212 +766,56 @@
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">8:00 PM – 9:15 PM</div>
+          <div class="slot-time" style="color:#3D3C39">8:00 PM – 8:30 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Travel from Job 2</div>
-            <div class="slot-detail">1 hr 15 min commute</div>
+            <div class="slot-detail">30 min commute</div>
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">9:15 PM – 9:35 PM</div>
+          <div class="slot-time" style="color:#3D3C39">8:30 PM – 8:50 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Drive to gym</div>
             <div class="slot-detail">20 min</div>
           </div>
         </div>
         <div class="slot slot-gym" style="background:#EDF7E2;border-left:3px solid #5A9118">
-          <div class="slot-time" style="color:#244010">9:35 PM – 10:35 PM</div>
+          <div class="slot-time" style="color:#244010">8:50 PM – 9:50 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#244010">🏋️ Gym</div>
             <div class="slot-detail">1 hr workout</div>
           </div>
         </div>
         <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">10:35 PM – 10:55 PM</div>
+          <div class="slot-time" style="color:#3D3C39">9:50 PM – 10:10 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#3D3C39">🚗 Drive home from gym</div>
             <div class="slot-detail">20 min</div>
           </div>
         </div>
         <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">10:55 PM – 11:00 PM</div>
+          <div class="slot-time" style="color:#9A9890">10:10 PM – 11:00 PM</div>
           <div class="slot-body">
             <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">5 min</div>
+            <div class="slot-detail">50 min</div>
           </div>
         </div></div>
       </div>
-      <div class="day-card">
+      <div class="day-card day-off">
         <div class="day-header">
           <span class="day-short">Sat</span>
           <span class="day-full">Saturday</span>
-          <span class="work-hrs">5 hr work</span>
+          <span class="day-tag tag-off">Rest</span>
         </div>
-        <div class="day-tags"><span class="day-tag tag-gym">🏋️ Weekend (4:00 PM)</span><span class="day-tag tag-study">📖 Study</span></div>
-        <div class="slots">
-        <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">6:00 AM – 6:30 AM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">30 min</div>
-          </div>
-        </div>
-        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">6:30 AM – 7:00 AM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#3D3C39">🚗 Travel to Job 1</div>
-            <div class="slot-detail">30 min commute</div>
-          </div>
-        </div>
-        <div class="slot slot-work" style="background:#EBF4FF;border-left:3px solid #378ADD">
-          <div class="slot-time" style="color:#0C3D7A">7:00 AM – 12:00 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#0C3D7A">💼 Job 1</div>
-            <div class="slot-detail">5 hr shift</div>
-          </div>
-        </div>
-        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">12:00 PM – 12:30 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#3D3C39">🚗 Travel from Job 1</div>
-            <div class="slot-detail">30 min commute</div>
-          </div>
-        </div>
-        <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">12:30 PM – 3:40 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">3 hr 10 min</div>
-          </div>
-        </div>
-        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">3:40 PM – 4:00 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#3D3C39">🚗 Drive to gym</div>
-            <div class="slot-detail">20 min</div>
-          </div>
-        </div>
-        <div class="slot slot-gym" style="background:#EDF7E2;border-left:3px solid #5A9118">
-          <div class="slot-time" style="color:#244010">4:00 PM – 5:00 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#244010">🏋️ Gym</div>
-            <div class="slot-detail">1 hr workout</div>
-          </div>
-        </div>
-        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">5:00 PM – 5:20 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#3D3C39">🚗 Drive home from gym</div>
-            <div class="slot-detail">20 min</div>
-          </div>
-        </div>
-        <div class="slot slot-study" style="background:#F0EFFE;border-left:3px solid #7F77DD">
-          <div class="slot-time" style="color:#2D2880">5:20 PM – 6:50 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#2D2880">📖 Study session</div>
-            <div class="slot-detail">90 min focused study</div>
-          </div>
-        </div>
-        <div class="slot slot-personal" style="background:#FEF5E6;border-left:3px solid #C47B10">
-          <div class="slot-time" style="color:#5A3600">6:50 PM – 7:35 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#5A3600">🌤 Personal time</div>
-            <div class="slot-detail">Rest, hobbies, recharge</div>
-          </div>
-        </div>
-        <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">7:35 PM – 11:00 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">3 hr 25 min</div>
-          </div>
-        </div></div>
+        <div class="day-off-msg">No shifts today — good for recovery&nbsp;&amp;&nbsp;study.</div>
       </div>
-      <div class="day-card">
+      <div class="day-card day-off">
         <div class="day-header">
           <span class="day-short">Sun</span>
           <span class="day-full">Sunday</span>
-          <span class="work-hrs">5 hr work</span>
+          <span class="day-tag tag-off">Rest</span>
         </div>
-        <div class="day-tags"><span class="day-tag tag-gym">🏋️ Weekend (4:00 PM)</span><span class="day-tag tag-study">📖 Study</span></div>
-        <div class="slots">
-        <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">6:00 AM – 6:30 AM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">30 min</div>
-          </div>
-        </div>
-        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">6:30 AM – 7:00 AM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#3D3C39">🚗 Travel to Job 1</div>
-            <div class="slot-detail">30 min commute</div>
-          </div>
-        </div>
-        <div class="slot slot-work" style="background:#EBF4FF;border-left:3px solid #378ADD">
-          <div class="slot-time" style="color:#0C3D7A">7:00 AM – 12:00 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#0C3D7A">💼 Job 1</div>
-            <div class="slot-detail">5 hr shift</div>
-          </div>
-        </div>
-        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">12:00 PM – 12:30 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#3D3C39">🚗 Travel from Job 1</div>
-            <div class="slot-detail">30 min commute</div>
-          </div>
-        </div>
-        <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">12:30 PM – 3:40 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">3 hr 10 min</div>
-          </div>
-        </div>
-        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">3:40 PM – 4:00 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#3D3C39">🚗 Drive to gym</div>
-            <div class="slot-detail">20 min</div>
-          </div>
-        </div>
-        <div class="slot slot-gym" style="background:#EDF7E2;border-left:3px solid #5A9118">
-          <div class="slot-time" style="color:#244010">4:00 PM – 5:00 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#244010">🏋️ Gym</div>
-            <div class="slot-detail">1 hr workout</div>
-          </div>
-        </div>
-        <div class="slot slot-travel" style="background:#F4F3F0;border-left:3px solid #9B9890">
-          <div class="slot-time" style="color:#3D3C39">5:00 PM – 5:20 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#3D3C39">🚗 Drive home from gym</div>
-            <div class="slot-detail">20 min</div>
-          </div>
-        </div>
-        <div class="slot slot-study" style="background:#F0EFFE;border-left:3px solid #7F77DD">
-          <div class="slot-time" style="color:#2D2880">5:20 PM – 6:50 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#2D2880">📖 Study session</div>
-            <div class="slot-detail">90 min focused study</div>
-          </div>
-        </div>
-        <div class="slot slot-personal" style="background:#FEF5E6;border-left:3px solid #C47B10">
-          <div class="slot-time" style="color:#5A3600">6:50 PM – 7:35 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#5A3600">🌤 Personal time</div>
-            <div class="slot-detail">Rest, hobbies, recharge</div>
-          </div>
-        </div>
-        <div class="slot slot-free" style="opacity:0.45" style="background:#F9F9F7;border-left:3px solid #D4D2CC">
-          <div class="slot-time" style="color:#9A9890">7:35 PM – 11:00 PM</div>
-          <div class="slot-body">
-            <div class="slot-label" style="color:#9A9890"> Free time</div>
-            <div class="slot-detail">3 hr 25 min</div>
-          </div>
-        </div></div>
+        <div class="day-off-msg">No shifts today — good for recovery&nbsp;&amp;&nbsp;study.</div>
       </div>
   </div>
 
