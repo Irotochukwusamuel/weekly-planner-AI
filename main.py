@@ -163,7 +163,9 @@ def main():
     def remove_generated_files(week_start: str):
         """Delete generated HTML and ICS files for a week if present."""
         for suffix in (".html", ".ics"):
-            path = os.path.join(os.path.dirname(CONFIG_PATH), f"schedule_{week_start}{suffix}")
+            path = os.path.join(
+                os.path.dirname(CONFIG_PATH), f"schedule_{week_start}{suffix}"
+            )
             if os.path.exists(path):
                 os.remove(path)
 
@@ -211,9 +213,13 @@ def main():
             return
 
         week, _ = bundle
-        answer = input(
-            f"  Delete week {week_id} ({week['week_start']}) and its files? [y/N]: "
-        ).strip().lower()
+        answer = (
+            input(
+                f"  Delete week {week_id} ({week['week_start']}) and its files? [y/N]: "
+            )
+            .strip()
+            .lower()
+        )
         if answer not in ("y", "yes"):
             print("  Delete cancelled.\n")
             return
